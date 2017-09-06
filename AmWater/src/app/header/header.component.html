@@ -1,39 +1,117 @@
 <div class="banner-bg">
-    <!-- <sm-menu title="Angular2" class="inverted teal" logo="../../assets/images/logo.png">
-      <a sm-item *ngFor="let item of items" [icon]="item.icon">{{item?.title}}</a>
+  <div class="main ui">
+      <sm-menu >
+          <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
+          <a class="inverted teal" sm-item href="#/elements/menu" image="../../assets/images/logo.png"></a>
+          <!-- <a sm-item href="#/elements/menu" *ngFor="let item of items" [icon]="item?.icon">{{item?.title}}</a> -->
+          <a sm-item href="#/elements/menu"  icon="home">Home</a>
+          <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
+              <sm-item *ngFor="let item of work">{{item}}</sm-item>
+          </sm-dropdown>
+          <sm-dropdown class="pointing link" title="Life" [options]="{on: 'hover'}">
+            <sm-item *ngFor="let item of life">{{item}}</sm-item>
+        </sm-dropdown>
+        <sm-dropdown class="pointing link" title="Engage" [options]="{on: 'hover'}">
+            <sm-item *ngFor="let item of engage">{{item}}</sm-item>
+        </sm-dropdown>
+        <sm-dropdown class="pointing link" title="Learn" [options]="{on: 'hover'}">
+          <sm-item *ngFor="let item of learn">{{item}}</sm-item>
+        </sm-dropdown>
 
-      <sm-menu class="menu right secondary">
-          <a sm-item href="#/elements/menu"
-              image="http://semantic-ui.com/images/avatar/small/stevie.jpg">Elliot Fu</a>
-          <a sm-item icon="sidebar big"></a>
+
+          <sm-menu class="menu right secondary icon">
+              <a class="item">
+                  <i class="search icon"></i>
+              </a>
+              <a class="item">
+                  <i class="bell icon"></i>
+              </a>
+              <a sm-item href="#/elements/menu"
+              image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a>
+
+
+              <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge" #menuSidebar>
+                  <a class="item">
+                      <i class="home icon"></i>
+                      Home
+                  </a>
+                  <a class="item">
+                      <i class="block layout icon"></i>
+                      Topics
+                  </a>
+                  <a class="item">
+                      <i class="smile icon"></i>
+                      Friends
+                  </a>
+              </sm-sidebar>
+          </sm-menu>
       </sm-menu>
-  </sm-menu> -->
+  </div>
 
-<div class="main ui container">
-    <sm-menu title="AmWater" class="inverted teal" logo="../../assets/images/logo.png">
-        <a sm-item href="#/elements/menu" *ngFor="let item of items" [icon]="item?.icon">{{item?.title}}</a>
+  <!-- banner -->
+  <div class="banner-middle">
+    <div class="ui container ">
+        <div class="row ">
+            <div class="col-sm-6">
+                <div class="welcome_text">
+                    Welcome back, Name
+                </div>
+            </div>
+            <div class="col-sm-6 text-right">
+                <div class="inbk mr10">
+                    <i class="location arrow icon"></i> Miami, Florifa
+                </div>
+                <div class="inbk temp">
+                    <span><i class="cloud icon"></i> 28 &#8457;</span> Partly Cloudy
+                </div>
+            </div>
+        </div>
 
-        <sm-menu class="menu right secondary icon">
-            <a sm-item href="#/elements/menu"
-            image="http://semantic-ui.com/images/avatar/small/stevie.jpg">Elliot Fu</a>
-
-            <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
-            <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge" #menuSidebar>
-                <a class="item">
-                    <i class="home icon"></i>
-                    Home
-                </a>
-                <a class="item">
-                    <i class="block layout icon"></i>
-                    Topics
-                </a>
-                <a class="item">
-                    <i class="smile icon"></i>
-                    Friends
-                </a>
-            </sm-sidebar>
-        </sm-menu>
-    </sm-menu>
-
-</div>
+        <div class="search-tab">
+            <sm-tabs>
+                <div class="text-find">Find:</div>
+                <sm-tab title="All" [active]="true">
+                    <sm-search placeholder="Search..." (onSearch)="elementIcon.innerText = $event" [icon]="true" class="fluid" [debounce]="500"></sm-search>
+                </sm-tab>
+                <sm-tab title="Knowledgebase">Suspendisse vehicula, lorem in maximus vehicula,
+                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                </sm-tab>
+                <sm-tab title="Documents">Suspendisse vehicula, lorem in maximus vehicula,
+                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                </sm-tab>
+                <sm-tab title="People">Suspendisse vehicula, lorem in maximus vehicula,
+                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                </sm-tab>
+                <sm-tab title="Social">Suspendisse vehicula, lorem in maximus vehicula,
+                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                </sm-tab>
+                <sm-tab title="Work">Suspendisse vehicula, lorem in maximus vehicula,
+                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                </sm-tab>
+            </sm-tabs>
+        </div>
+    </div>
+  </div>
+  <div class="banner-bottom">
+      <div class="ui container">
+          <div class="row">
+              <div class="col-sm-3">
+                  <span class="circle">
+                      <i class="announcement icon"></i>
+                  </span>
+                  <span>Announcement</span>
+              </div>
+              <div class="col-sm-6">
+                  <div >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  </div>
+              </div>
+              <div class="col-sm-3 text-right">
+                  <div >
+                      Learn More  <i class="arrow right icon"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>

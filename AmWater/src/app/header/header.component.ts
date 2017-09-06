@@ -11,7 +11,18 @@ import { SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES } from 'ng-semantic';
 export class HeaderComponent {
   items: Array<any> = [];
   labeledIcons: Array<any> = [];
+  // multipleData = [];
+  work: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
+  life: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
+  engage: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
+  learn: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
 
+  // onChange(data: {}) {
+  //     console.log(data);
+  // }
+  // onMultiple(data: Array<string>): void {
+  //     this.multipleData = data;
+  // }
   constructor() {
       this.items = [{
           'title': 'Home',

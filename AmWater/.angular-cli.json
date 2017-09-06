@@ -19,12 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss",
-        "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
+        "styles/app.scss"
       ],
       "scripts": [
-         "../node_modules/jquery/dist/jquery.min.js",
-        "assets/js/semantic.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

@@ -1,10 +1,132 @@
+@import '../../styles/variables.scss';
 .banner-bg{
   background: url(../../assets/images/banner.jpg);
-  padding: 15px;
+  //padding:0 15px;
+  position: relative;
+  height: 650px;
 }
 .ui.menu .item>img:not(.ui) {
   width: 10.5em;
 }
-.ui.inverted.teal.menu {
+.ui.menu {
   background-color: transparent;
+  border: 0;
+  box-shadow:none;
+  a.item{
+    color: $white;
+    text-transform: uppercase;
+    &:hover, &:focus{
+        font-weight: bold;
+        color: $white;
+        background: transparent;
+    }
+    &:before {
+       width: 0;
+    }
+  }
+}
+.inverted.teal .ui.avatar.image{
+  width: 163px;
+  height: 33px;
+  margin: 0;
+}
+sm-dropdown .dropdown{
+  height: 100%;
+  color: $white !important;
+  .text{
+    text-transform: uppercase;
+  }
+  &:hover, &:focus{
+      font-weight: bold;
+      color: $white;
+      background: transparent !important;
+  }
+  &:before {
+      width: 0 !important;
+  }
+}
+.banner-middle{
+  color: $white;
+  position: absolute;
+  top: calc(50% - 75px);
+  width: 100%;
+  .welcome_text, .temp span{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .search-tab{
+    background: #fbfbfb;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 4px;
+    .ui.attached.tabular.menu{
+        display: inline-block;
+        border: 0;
+        width: auto;
+        min-height: auto;
+        a{
+          display: inline-block;
+        }
+    }
+    .ui.tabular.menu .item{
+      color:#888;
+      font-weight: bold;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 1.4285em;
+      border: 0;
+      background: transparent;
+      &.active, &:hover, &:focus{
+        color: $theme-color2;
+        border: 0;
+      }
+    }
+    .ui.attached.segment{
+        max-width:100%;
+        width:100%;
+        margin:10px 0 0 0;
+        color:#888;
+        background: $white;
+        border-top: 1px solid #D4D4D5;
+        padding: 10px;
+
+        .ui.search .prompt{
+          border-radius: 4px;
+          padding: 15px;
+        }
+        .ui.search .prompt~.search.icon{
+          color: $theme-color2;
+          opacity: 1;
+        }
+
+    }
+  }
+  .text-find{
+    color: $theme-color1;
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 1px;
+  }
+}
+.banner-bottom{
+  background: rgba(0,0,0,0.18);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: $white;
+  padding: 15px 0;
+
+  .circle{
+    background: $white;
+    color: $theme-color2;
+    border-radius: 50%;
+    padding: 4px 3px;
+    margin-right: 10px;
+    i{
+      margin: 0;
+      height: 17px;
+      width: 17px;
+    }
+  }
 }

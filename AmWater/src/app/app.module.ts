@@ -11,8 +11,8 @@ import { NgSemanticModule } from 'ng-semantic';
   declarations: [
     AppComponent,
     HeaderComponent,
-    // FooterComponent,
-    // MainComponent
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
