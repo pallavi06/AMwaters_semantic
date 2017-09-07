@@ -2,3 +2,45 @@
 .gray-bg{
   background: $gray;
 }
+.common-heading{
+  font-weight: bold;
+  font-size: 20px;
+  color: $text-color;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.left_content{
+  .img-slider{
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width:  100%;
+    height: 100%;
+    color: $white;
+    header{
+      font-size: 22px;
+      font-weight: bold;
+    }
+    section{
+      font-size: 14px;
+    }
+    footer{
+      font-size: 22px;
+      font-weight: bold;
+      span{
+        background: $theme-color2;
+      }
+    }
+  }
+  .img-text{
+    top: 23%;
+    position: absolute;
+    padding: 15px;
+
+  }
+}
