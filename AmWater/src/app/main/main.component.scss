@@ -22,6 +22,7 @@ hr{
 }
 .left_content{
   position: relative;
+  padding-right: 15px;
   &:after{
     position: absolute;
     content: '';
@@ -76,5 +77,33 @@ hr{
     position: absolute;
     padding: 20px;
 
+  }
+}
+.gray-bg1{
+  background: darken($gray, 10%);
+  .row{
+    padding: 20px 0;
+  }
+  .ui.search {
+      margin-top: 12px !important;
+      i{
+        color: $theme-color1;
+        opacity: 1;
+      }
+  }
+}
+.right_content{
+  padding-left: 15px;
+  app-yammer header{
+    color: $theme-color1;
+    margin-bottom: 5px;
+  }
+  section{
+    color: $text-color;
+    margin-bottom: 15px;
+  }
+  .footer_link a{
+    color: $theme-color2;
+    font-size: 18px;
   }
 }

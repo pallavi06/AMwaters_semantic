@@ -75,8 +75,8 @@
           </div>
       </div>
       </div>
-      <div class="col-sm-3">
-        <header>Yammer</header>
+      <div class="col-sm-3 right_content">
+        <header class="common-heading">Yammer</header>
         <app-yammer></app-yammer>
       </div>
     </div>
@@ -115,6 +115,19 @@
 </div>
 <hr>
 <!-- find offices -->
-<div class="ui container">
-    <div class="common-heading">find offices</div>
+<div class="gray-bg1">
+  <div class="ui container">
+     <div class="row">
+       <div class="col-sm-6">
+          <div class="common-heading">find offices</div>
+       </div>
+       <div class="col-sm-6">
+          <sm-search placeholder="What would you like to do today?" (onSearch)="elementIcon.innerText = $event" [icon]="true" class="fluid" [debounce]="500"></sm-search>
+       </div>
+     </div>
+
+  </div>
+  <div>
+    <img src="../../assets/images/map.png">
+  </div>
 </div>
