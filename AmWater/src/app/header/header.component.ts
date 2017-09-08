@@ -12,11 +12,11 @@ export class HeaderComponent {
   items: Array<any> = [];
   labeledIcons: Array<any> = [];
   // multipleData = [];
+  discover: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
+  connect: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
+  share: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
   work: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
-  life: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
-  engage: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
-  learn: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
-
+  admin: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
   // onChange(data: {}) {
   //     console.log(data);
   // }

@@ -9,6 +9,7 @@ import { NgSemanticModule } from 'ng-semantic/ng-semantic';
 import { BoxComponent } from './box/box.component';
 import { CardComponent } from './card/card.component';
 import { VideoComponent } from './video/video.component';
+import { YammerComponent } from './yammer/yammer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VideoComponent } from './video/video.component';
     MainComponent,
     BoxComponent,
     CardComponent,
-    VideoComponent
+    VideoComponent,
+    YammerComponent
   ],
   imports: [
     BrowserModule,
