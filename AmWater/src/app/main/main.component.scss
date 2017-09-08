@@ -112,3 +112,33 @@ hr{
     font-size: 18px;
   }
 }
+.annual_data{
+  header{
+    font-size: 18px;
+    font-family: 'Lato-Bold';
+  }
+  p{
+    overflow: hidden;
+  }
+  .col-sm-3{
+    margin-bottom: 15px;
+  }
+  .icon-circle{
+    float: left;
+    &.blue{
+      color:#05B7EE;
+    }
+    &.blue1{
+      color: $theme-color1;
+    }
+    &.yellow{
+      color:#FEC00C;
+    }
+    &.green{
+      color: #79BD45;
+    }
+    &.orange{
+      color: #F79C43;
+    }
+  }
+}
