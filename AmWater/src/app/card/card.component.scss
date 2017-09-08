@@ -9,9 +9,8 @@
   }
   card-title{
     color:  $theme-color2;
-    font-weight: bold;
     font-size: 18px;
-    font-family: Lato-Regular;
+    font-family: "Lato-Bold";
   }
   .date{
     color: rgba(0,0,0,.6);
@@ -25,7 +24,6 @@
   .extra.content{
     border-top: none !important;
     padding: 0 1em;
-    font-weight: bold;
     a{
       color:  $theme-color1 !important;
     }

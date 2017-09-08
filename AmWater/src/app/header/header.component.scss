@@ -18,9 +18,9 @@
     color: $white;
     text-transform: uppercase;
     &:hover, &:focus{
-        font-weight: bold;
         color: $white;
         background: transparent;
+        font-family: 'Lato-Bold';
     }
     &:before {
        width: 0;
@@ -39,7 +39,7 @@ sm-dropdown .dropdown{
     text-transform: uppercase;
   }
   &:hover, &:focus{
-      font-weight: bold;
+    font-family: 'Lato-Bold';
       color: $white;
       background: transparent !important;
   }
@@ -53,7 +53,6 @@ sm-dropdown .dropdown{
   top: calc(50% - 75px);
   width: 100%;
   .welcome_text, .temp span{
-    font-weight: bold;
     font-size: 18px;
     font-family: Lato-Bold;
   }
@@ -73,7 +72,7 @@ sm-dropdown .dropdown{
     }
     .ui.tabular.menu .item{
       color:#888;
-      font-weight: bold;
+      font-family: 'Lato-Bold';
       padding-top: 0;
       padding-bottom: 0;
       line-height: 1.4285em;
@@ -108,7 +107,6 @@ sm-dropdown .dropdown{
   .text-find{
     color: $theme-color1;
     float: left;
-    font-weight: bold;
     margin-left: 10px;
     margin-top: 1px;
     font-family: 'Lato-Bold';

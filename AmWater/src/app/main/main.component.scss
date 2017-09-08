@@ -3,7 +3,7 @@
   background: $gray;
 }
 .common-heading{
-  font-weight: bold;
+  font-family: 'Lato-Bold';
   font-size: 20px;
   color: $text-color;
   text-transform: uppercase;
@@ -13,7 +13,6 @@
     color: $theme-color2;
     text-transform: none;
     font-style: italic;
-    font-weight: normal;
     font-family: 'Lato-Bold';
   }
 }
@@ -56,7 +55,7 @@ hr{
     }
     header{
       font-size: 22px;
-      font-weight: bold;
+      font-family: 'Lato-Bold';
       margin: 10px 0;
       line-height: 28px;
     }
@@ -67,7 +66,7 @@ hr{
     }
     footer{
       font-size: 14px;
-      font-weight: bold;
+      font-family: 'Lato-Bold';
 
       span{
         background: $theme-color2;
