@@ -8,10 +8,17 @@
   color: $text-color;
   text-transform: uppercase;
   padding: 20px 0;
+  span{
+    color: $theme-color2;
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+  }
 }
-.date{
-  font-size: 12px;
-  font-family: normal;
+hr{
+  background: lighten($text-color , 35%) ;
+  border: 0;
+  height: 1px;
 }
 .left_content{
   position: relative;

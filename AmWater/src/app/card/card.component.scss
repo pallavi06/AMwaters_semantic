@@ -1,9 +1,30 @@
 @import '../../styles/variables.scss';
 
 .card{
-
-
   .ui.card {
-      padding: 15px;
+      padding: 10px;
+      border-radius: 0;
+      margin-bottom: 20px;
+      min-height: 361px;
+  }
+  card-title{
+    color:  $theme-color2;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .date{
+    color: rgba(0,0,0,.6);
+  }
+  card-content{
+    color: $text-color;
+    font-size: 14px;
+  }
+  .extra.content{
+    border-top: none !important;
+    padding: 0 1em;
+    font-weight: bold;
+    a{
+      color:  $theme-color1 !important;
+    }
   }
 }
