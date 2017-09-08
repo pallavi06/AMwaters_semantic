@@ -112,6 +112,7 @@ hr{
   }
 }
 .annual_data{
+  margin-top: 30px;
   header{
     font-size: 18px;
     font-family: 'Lato-Bold';
@@ -122,22 +123,101 @@ hr{
   .col-sm-3{
     margin-bottom: 15px;
   }
-  .icon-circle{
-    float: left;
-    &.blue{
-      color:#05B7EE;
-    }
-    &.blue1{
-      color: $theme-color1;
-    }
-    &.yellow{
-      color:#FEC00C;
-    }
-    &.green{
-      color: #79BD45;
-    }
-    &.orange{
-      color: #F79C43;
+
+}
+.icon-circle{
+  float: left;
+  &.blue{
+    color:#05B7EE;
+  }
+  &.blue1{
+    color: $theme-color1;
+  }
+  &.yellow{
+    color:#FEC00C;
+  }
+  &.green{
+    color: #79BD45;
+  }
+  &.orange{
+    color: #F79C43;
+  }
+}
+.table{
+  //border:1px solid lighten($text-color , 35%) ;
+  td,th{
+    padding:10px;
+  }
+  thead{
+    background: $theme-color1;
+    font-size: 16px;
+    font-family: 'Lato-Bold';
+    color: $white;
+    // border: 1px solid $theme-color1;
+    th{
+      border-right: 1px solid $white;
+      text-transform: uppercase;
+      text-align: left;
+      &:last-child{
+        border-right: 0;
+      }
     }
   }
+  tbody{
+    td{
+      border:1px solid lighten($text-color , 35%) ;
+      color:darken($text-color , 50%);
+      &:last-child{
+        border-left: 0;
+      }
+      &:first-child{
+        border-right: 0;
+      }
+    }
+  }
+}
+.orange-bg{
+    background: #F79C43;
+    i{
+      color: $white;
+    }
+}
+.blue-bg{
+  background:#05B7EE;
+  i{
+    color: $white;
+  }
+}
+.blue1-bg{
+  background: $theme-color1;
+  i{
+    color: $white;
+  }
+}
+.yellow-bg{
+  background:#FEC00C;
+  i{
+    color: $white;
+  }
+}
+.green-bg{
+  background: #79BD45;
+  i{
+    color: $white;
+  }
+}
+.orange-lt-bg{
+  background: lighten(#F79C43, 30%);
+}
+.blue-lt-bg{
+background: lighten(#05B7EE, 30%);;
+}
+.blue1-lt-bg{
+background:  lighten($theme-color1, 30%);;
+}
+.yellow-lt-bg{
+background:lighten(#FEC00C, 30%);;
+}
+.green-lt-bg{
+background: lighten(#79BD45, 30%);;
 }
