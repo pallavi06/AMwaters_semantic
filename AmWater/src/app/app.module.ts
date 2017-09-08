@@ -5,14 +5,20 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { NgSemanticModule } from 'ng-semantic';
+import { NgSemanticModule } from 'ng-semantic/ng-semantic';
+import { BoxComponent } from './box/box.component';
+import { CardComponent } from './card/card.component';
+import { VideoComponent } from './video/video.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    BoxComponent,
+    CardComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
