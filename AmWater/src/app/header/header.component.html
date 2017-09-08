@@ -5,17 +5,20 @@
           <a class="inverted teal" sm-item href="#/elements/menu" image="../../assets/images/logo.png"></a>
           <!-- <a sm-item href="#/elements/menu" *ngFor="let item of items" [icon]="item?.icon">{{item?.title}}</a> -->
           <a sm-item href="#/elements/menu"  icon="home">Home</a>
-          <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
-              <sm-item *ngFor="let item of work">{{item}}</sm-item>
+          <sm-dropdown class="pointing link" title="Discover" [options]="{on: 'hover'}">
+              <sm-item *ngFor="let item of discover ">{{item}}</sm-item>
           </sm-dropdown>
-          <sm-dropdown class="pointing link" title="Life" [options]="{on: 'hover'}">
-            <sm-item *ngFor="let item of life">{{item}}</sm-item>
+          <sm-dropdown class="pointing link" title="Connect" [options]="{on: 'hover'}">
+            <sm-item *ngFor="let item of connect">{{item}}</sm-item>
         </sm-dropdown>
-        <sm-dropdown class="pointing link" title="Engage" [options]="{on: 'hover'}">
-            <sm-item *ngFor="let item of engage">{{item}}</sm-item>
+        <sm-dropdown class="pointing link" title="Share" [options]="{on: 'hover'}">
+            <sm-item *ngFor="let item of share">{{item}}</sm-item>
         </sm-dropdown>
-        <sm-dropdown class="pointing link" title="Learn" [options]="{on: 'hover'}">
-          <sm-item *ngFor="let item of learn">{{item}}</sm-item>
+        <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
+          <sm-item *ngFor="let item of work">{{item}}</sm-item>
+        </sm-dropdown>
+        <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'hover'}">
+          <sm-item *ngFor="let item of admin">{{item}}</sm-item>
         </sm-dropdown>
 
 
@@ -71,22 +74,13 @@
             <sm-tabs>
                 <div class="text-find">Find:</div>
                 <sm-tab title="All" [active]="true">
-                    <sm-search placeholder="Search..." (onSearch)="elementIcon.innerText = $event" [icon]="true" class="fluid" [debounce]="500"></sm-search>
+                    <sm-search placeholder="What would you like to do today?" (onSearch)="elementIcon.innerText = $event" [icon]="true" class="fluid" [debounce]="500"></sm-search>
                 </sm-tab>
-                <sm-tab title="Knowledgebase">Suspendisse vehicula, lorem in maximus vehicula,
-                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                <sm-tab title="Content">What would you like to do today?
                 </sm-tab>
-                <sm-tab title="Documents">Suspendisse vehicula, lorem in maximus vehicula,
-                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                <sm-tab title="People">What would you like to do today?
                 </sm-tab>
-                <sm-tab title="People">Suspendisse vehicula, lorem in maximus vehicula,
-                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
-                </sm-tab>
-                <sm-tab title="Social">Suspendisse vehicula, lorem in maximus vehicula,
-                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
-                </sm-tab>
-                <sm-tab title="Work">Suspendisse vehicula, lorem in maximus vehicula,
-                    massa leo viverra purus, ac blandit nulla orci eget eros. Integer at est dapibus, molestie justo non, accumsan est.
+                <sm-tab title="Help">What would you like to do today?
                 </sm-tab>
             </sm-tabs>
         </div>
