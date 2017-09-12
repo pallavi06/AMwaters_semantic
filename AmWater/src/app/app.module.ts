@@ -10,7 +10,8 @@ import { BoxComponent } from './box/box.component';
 import { CardComponent } from './card/card.component';
 import { VideoComponent } from './video/video.component';
 import { YammerComponent } from './yammer/yammer.component';
-
+import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselModule } from 'angular4-carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +21,14 @@ import { YammerComponent } from './yammer/yammer.component';
     BoxComponent,
     CardComponent,
     VideoComponent,
-    YammerComponent
+    YammerComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgSemanticModule
+    NgSemanticModule,
+    CarouselModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],

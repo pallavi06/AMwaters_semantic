@@ -10,7 +10,7 @@ export class BoxComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.text)
+    // console.log(this.text)
   }
 
 }
