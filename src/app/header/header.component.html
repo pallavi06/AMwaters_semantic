@@ -4,7 +4,8 @@
       <sm-menu >
 
           <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
-          <a class="inverted teal" sm-item href="#/elements/menu" image="../../assets/images/logo.png"></a>
+          <a class="inverted teal" sm-item href="#/elements/menu"   *ngIf="!isShrunk" image="../../assets/images/logo.png"></a>
+          <a class="inverted teal" sm-item href="#/elements/menu"   *ngIf="isShrunk" image="../../assets/images/logo2.png"></a>
           <!-- <input type="checkbox" id="nav" /><label for="sm-menu"></label> -->
           <!-- <a sm-item href="#/elements/menu" *ngFor="let item of items" [icon]="item?.icon">{{item?.title}}</a> -->
           <a sm-item href="#/elements/menu"  icon="home">Home</a>
@@ -32,12 +33,13 @@
               <a class="item">
                   <i class="bell icon"></i>
               </a>
+
               <a sm-item href="#/elements/menu"
               image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a>
 
 
               <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge" #menuSidebar>
-                  <a class="item">
+                  <!-- <a class="item">
                       <i class="home icon"></i>
                       Home
                   </a>
@@ -48,12 +50,39 @@
                   <a class="item">
                       <i class="smile icon"></i>
                       Friends
-                  </a>
-                  <sm-accordion class="styled">
+                  </a> -->
+                  <sm-dropdown class="pointing floating labeled icon button" title="Nested">
+                      <sm-item>Stevie</sm-item>
+                      <sm-item>Stevie</sm-item>
+                      <sm-item>Stevie</sm-item>
+                      <div class="ui divider"></div>
+                      <sm-item>
+                          <sm-dropdown class="left pointing link" title="Stivie">
+                                <sm-item>Stevie</sm-item>
+                                <sm-item>Stevie</sm-item>
+                                <sm-item>Stevie</sm-item>
+                          </sm-dropdown>
+                      </sm-item>
+                    </sm-dropdown>
+                    <sm-dropdown class="pointing floating labeled icon button" title="Nested">
+                        <sm-item>Stevie</sm-item>
+                        <sm-item>Stevie</sm-item>
+                        <sm-item>Stevie</sm-item>
+                        <div class="ui divider"></div>
+                        <sm-item>
+                            <sm-dropdown class="left pointing link" title="Stivie">
+                                  <sm-item>Stevie</sm-item>
+                                  <sm-item>Stevie</sm-item>
+                                  <sm-item>Stevie</sm-item>
+                            </sm-dropdown>
+                        </sm-item>
+                      </sm-dropdown>
+                  <!-- <sm-accordion class="styled">
                       <sm-accordion-item>
                           <accordion-title icon="sidebar big">What is a dog? <i class="plus square outline icon"></i></accordion-title>
-                          <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
-                          it can be found as a welcome guest in many households across the world.</accordion-content>
+                          <accordion-content>
+                              vdfgdf
+                          </accordion-content>
                       </sm-accordion-item>
                       <sm-accordion-item>
                           <accordion-title>What kinds of dogs are there?</accordion-title>
@@ -65,7 +94,7 @@
                           <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
                           it can be found as a welcome guest in many households across the world.</accordion-content>
                       </sm-accordion-item>
-                  </sm-accordion>
+                  </sm-accordion> -->
               </sm-sidebar>
           </sm-menu>
       </sm-menu>

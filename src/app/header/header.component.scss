@@ -192,6 +192,13 @@ sm-dropdown .dropdown{
 }
 
 .ui.inverted.teal.menu {
-  background-color: $white;
+  // background-color: $white;
 }
-
+.ui.vertical.menu .dropdown.item .menu {
+  left: 0;
+  top: 38px !important;
+}
+sm-dropdown .dropdown {
+  height: auto;
+  color: #fff !important;
+}

@@ -1,7 +1,8 @@
 
     <kendo-sortable class="row"
       [data]="cards"
-      [itemStyle]="{'color': item,'cursor': 'move'}">
+      [itemStyle]="{'color': item,'cursor': 'move'}"
+      [activeItemStyle] = "{'box-shadow': '0 0 10px 0 rgba(0, 0, 0, 0.15)'}">
         <div class="col-sm-4">
           <ng-template let-card="item">
             <sm-card class="card" image="{{card.img}}">

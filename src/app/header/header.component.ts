@@ -19,6 +19,7 @@ export class HeaderComponent {
   share: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
   work: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
   admin: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
+  sidebaritem: Array<string> = ['New York', 'Belgrade', 'Stockholm', 'Sarajevo'];
   // onChange(data: {}) {
   //     console.log(data);
   // }
@@ -64,17 +65,4 @@ export class HeaderComponent {
           }];
 
   }
-
-  // isShrunk: boolean = false;
-  //   constructor(zone: NgZone) {
-  //     window.onscroll = () => {
-  //       zone.run(() => {
-  //         if(window.pageYOffset > 0) {
-  //              this.isShrunk = true;
-  //         } else {
-  //              this.isShrunk = false;
-  //         }
-  //       });
-  //     }
-  //   }
 }
