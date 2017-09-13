@@ -1,8 +1,11 @@
+<!-- <div [ngClass]="{'header_nav':true, 'header_nav--big':!isShrunk, 'header_nav--small':isShrunk}">nav here</div> -->
 <div class="banner-bg">
-  <div class="main ui">
+  <div class="main ui" [ngClass]="{'header_nav':true, 'header_nav--big':!isShrunk, 'header_nav--small':isShrunk}">
       <sm-menu >
-          <!-- <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a> -->
+
+          <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
           <a class="inverted teal" sm-item href="#/elements/menu" image="../../assets/images/logo.png"></a>
+          <!-- <input type="checkbox" id="nav" /><label for="sm-menu"></label> -->
           <!-- <a sm-item href="#/elements/menu" *ngFor="let item of items" [icon]="item?.icon">{{item?.title}}</a> -->
           <a sm-item href="#/elements/menu"  icon="home">Home</a>
           <sm-dropdown class="pointing link" title="Discover" [options]="{on: 'hover'}">
@@ -10,16 +13,16 @@
           </sm-dropdown>
           <sm-dropdown class="pointing link" title="Connect" [options]="{on: 'hover'}">
             <sm-item *ngFor="let item of connect">{{item}}</sm-item>
-        </sm-dropdown>
-        <sm-dropdown class="pointing link" title="Share" [options]="{on: 'hover'}">
-            <sm-item *ngFor="let item of share">{{item}}</sm-item>
-        </sm-dropdown>
-        <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
-          <sm-item *ngFor="let item of work">{{item}}</sm-item>
-        </sm-dropdown>
-        <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'hover'}">
-          <sm-item *ngFor="let item of admin">{{item}}</sm-item>
-        </sm-dropdown>
+          </sm-dropdown>
+          <sm-dropdown class="pointing link" title="Share" [options]="{on: 'hover'}">
+              <sm-item *ngFor="let item of share">{{item}}</sm-item>
+          </sm-dropdown>
+          <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
+            <sm-item *ngFor="let item of work">{{item}}</sm-item>
+          </sm-dropdown>
+          <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'hover'}">
+            <sm-item *ngFor="let item of admin">{{item}}</sm-item>
+          </sm-dropdown>
 
 
           <sm-menu class="menu right secondary icon">
@@ -33,7 +36,7 @@
               image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a>
 
 
-              <!-- <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge" #menuSidebar>
+              <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge" #menuSidebar>
                   <a class="item">
                       <i class="home icon"></i>
                       Home
@@ -46,7 +49,24 @@
                       <i class="smile icon"></i>
                       Friends
                   </a>
-              </sm-sidebar> -->
+                  <sm-accordion class="styled">
+                      <sm-accordion-item>
+                          <accordion-title icon="sidebar big">What is a dog? <i class="plus square outline icon"></i></accordion-title>
+                          <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
+                          it can be found as a welcome guest in many households across the world.</accordion-content>
+                      </sm-accordion-item>
+                      <sm-accordion-item>
+                          <accordion-title>What kinds of dogs are there?</accordion-title>
+                          <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
+                          it can be found as a welcome guest in many households across the world.</accordion-content>
+                      </sm-accordion-item>
+                      <sm-accordion-item>
+                          <accordion-title>How do you acquire a dog?</accordion-title>
+                          <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
+                          it can be found as a welcome guest in many households across the world.</accordion-content>
+                      </sm-accordion-item>
+                  </sm-accordion>
+              </sm-sidebar>
           </sm-menu>
       </sm-menu>
   </div>
@@ -109,3 +129,4 @@
       </div>
   </div>
 </div>
+

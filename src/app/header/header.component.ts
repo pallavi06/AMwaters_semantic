@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NgSemanticModule } from 'ng-semantic';
 import { SEMANTIC_COMPONENTS, SEMANTIC_DIRECTIVES } from 'ng-semantic';
+import { NgZone } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
@@ -23,7 +25,18 @@ export class HeaderComponent {
   // onMultiple(data: Array<string>): void {
   //     this.multipleData = data;
   // }
-  constructor() {
+  isShrunk = false;
+  constructor(zone: NgZone)  {
+    window.onscroll = () => {
+          zone.run(() => {
+            if (window.pageYOffset > 0) {
+                 this.isShrunk = true;
+            } else {
+                 this.isShrunk = false;
+            }
+          });
+        },
+
       this.items = [{
           'title': 'Home',
           'link': 'Home',
@@ -51,4 +64,17 @@ export class HeaderComponent {
           }];
 
   }
+
+  // isShrunk: boolean = false;
+  //   constructor(zone: NgZone) {
+  //     window.onscroll = () => {
+  //       zone.run(() => {
+  //         if(window.pageYOffset > 0) {
+  //              this.isShrunk = true;
+  //         } else {
+  //              this.isShrunk = false;
+  //         }
+  //       });
+  //     }
+  //   }
 }

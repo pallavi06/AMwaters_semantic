@@ -5,6 +5,7 @@
   position: relative;
   height: 650px;
 }
+
 .ui.menu .item>img:not(.ui) {
   width: 10.5em;
 }
@@ -14,6 +15,7 @@
   box-shadow:none;
   font-family: Lato-Regular;
   font-size: 14px;
+  border-radius: 0;
   a.item{
     color: $white;
     text-transform: uppercase;
@@ -26,11 +28,6 @@
        width: 0;
     }
   }
-}
-.inverted.teal .ui.avatar.image{
-  width: 163px;
-  height: 33px;
-  margin: 0;
 }
 sm-dropdown .dropdown{
   height: 100%;
@@ -46,6 +43,47 @@ sm-dropdown .dropdown{
   &:before {
       width: 0 !important;
   }
+}
+.header_nav {
+  width:100%;
+
+  position:fixed;
+  top:0;
+  left:0;
+ -webkit-transition:0.25s linear all;
+ -moz-transition:0.25s linear all;
+ -o-transition:0.25s linear all;
+ transition:0.25s linear all;
+ z-index: 99999;
+}
+
+.header_nav--small .ui.menu {
+  background-color:$white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  a.item{
+    color: $theme-color1;
+    text-transform: uppercase;
+    &:hover, &:focus{
+        color: $theme-color1;
+        background: transparent;
+        font-family: 'Lato-Bold';
+    }
+    &:before {
+      width: 0;
+    }
+  }
+  sm-dropdown .dropdown{
+    color: $theme-color1 !important;
+
+    &:hover, &:focus{
+      color: $theme-color1;
+    }
+  }
+}
+.inverted.teal .ui.avatar.image{
+  width: 163px;
+  height: 33px;
+  margin: 0;
 }
 .banner-middle{
   color: $white;
@@ -137,3 +175,23 @@ sm-dropdown .dropdown{
     font-family: 'Lato-Bold';
   }
 }
+
+//sidebar
+.ui.sidebar{
+  top: 60px;
+}
+
+.header_logo{
+  display: inline-block;
+  a{
+    display: inline-block;
+  }
+}
+.menu_ui{
+  display: inline-block;
+}
+
+.ui.inverted.teal.menu {
+  background-color: $white;
+}
+
