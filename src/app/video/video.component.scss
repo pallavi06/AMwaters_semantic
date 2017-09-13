@@ -12,3 +12,15 @@
     }
   }
 }
+
+.box_content{
+    background: $white;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 0 10px 0  rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    header{
+      color: $theme-color1;
+      text-transform: uppercase;
+    }
+}

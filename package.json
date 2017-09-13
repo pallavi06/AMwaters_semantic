@@ -23,6 +23,8 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@progress/kendo-angular-l10n": "^1.0.3",
+    "@progress/kendo-angular-sortable": "^1.0.3",
     "angular4-carousel": "^3.1.5",
     "core-js": "^2.4.1",
     "flexboxgrid": "^6.3.1",

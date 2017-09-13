@@ -1,0 +1,21 @@
+
+    <kendo-sortable class="row"
+      [data]="cards"
+      [itemStyle]="{'color': item,'cursor': 'move'}">
+        <div class="col-sm-4">
+          <ng-template let-card="item">
+            <sm-card class="card" image="{{card.img}}">
+              <card-title> {{card.heading}} </card-title>
+              <card-subtitle class="date">{{card.date}}</card-subtitle>
+                <card-content>
+                {{card.text}}
+                </card-content>
+                <card-extra>
+                  <a>
+                  Learn More <i class="arrow right icon"></i>
+                  </a>
+                </card-extra>
+            </sm-card>
+          </ng-template>
+        </div>
+    </kendo-sortable>
