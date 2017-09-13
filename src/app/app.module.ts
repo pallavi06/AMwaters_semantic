@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -12,6 +12,9 @@ import { VideoComponent } from './video/video.component';
 import { YammerComponent } from './yammer/yammer.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'angular4-carousel';
+import { SortableComponent } from './sortable/sortable.component';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { SafePipe } from './video/video.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +25,15 @@ import { CarouselModule } from 'angular4-carousel';
     CardComponent,
     VideoComponent,
     YammerComponent,
-    CarouselComponent
+    CarouselComponent,
+    SortableComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgSemanticModule,
-    CarouselModule
+    CarouselModule,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
