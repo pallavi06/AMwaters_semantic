@@ -21,7 +21,7 @@
           <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
             <sm-item *ngFor="let item of work">{{item}}</sm-item>
           </sm-dropdown>
-          <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'hover'}">
+          <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'focus'}">
             <sm-item *ngFor="let item of admin">{{item}}</sm-item>
           </sm-dropdown>
 
@@ -38,7 +38,9 @@
               image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a>
 
 
-              <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge" #menuSidebar>
+              <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge mysidebar" #menuSidebar>
+
+
                   <!-- <a class="item">
                       <i class="home icon"></i>
                       Home
@@ -51,13 +53,13 @@
                       <i class="smile icon"></i>
                       Friends
                   </a> -->
-                  <sm-dropdown class="pointing floating labeled icon button" title="Nested">
+                  <!-- <sm-dropdown class="pointing floating labeled icon button" icon="plus square outline" title="Nested" [options]="{on: 'focus'}">
                       <sm-item>Stevie</sm-item>
                       <sm-item>Stevie</sm-item>
                       <sm-item>Stevie</sm-item>
                       <div class="ui divider"></div>
                       <sm-item>
-                          <sm-dropdown class="left pointing link" title="Stivie">
+                          <sm-dropdown class="left pointing link" title="Stivie" [options]="{on: 'focus'}">
                                 <sm-item>Stevie</sm-item>
                                 <sm-item>Stevie</sm-item>
                                 <sm-item>Stevie</sm-item>
@@ -76,25 +78,90 @@
                                   <sm-item>Stevie</sm-item>
                             </sm-dropdown>
                         </sm-item>
-                      </sm-dropdown>
-                  <!-- <sm-accordion class="styled">
+                      </sm-dropdown> -->
+                  <sm-accordion class="styled">
                       <sm-accordion-item>
-                          <accordion-title icon="sidebar big">What is a dog? <i class="plus square outline icon"></i></accordion-title>
+                          <accordion-title icon="sidebar big">Level1 <i class="plus square outline icon"></i></accordion-title>
                           <accordion-content>
-                              vdfgdf
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level1A </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level1B </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level1C </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level1D </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level1E </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
                           </accordion-content>
                       </sm-accordion-item>
                       <sm-accordion-item>
-                          <accordion-title>What kinds of dogs are there?</accordion-title>
-                          <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
-                          it can be found as a welcome guest in many households across the world.</accordion-content>
+                          <accordion-title>Level2 <i class="plus square outline icon"></i></accordion-title>
+                          <accordion-content>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level2A </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level2B </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level2C </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                          </accordion-content>
                       </sm-accordion-item>
                       <sm-accordion-item>
-                          <accordion-title>How do you acquire a dog?</accordion-title>
-                          <accordion-content>A dog is a type of domesticated animal. Known for its loyalty and faithfulness,
-                          it can be found as a welcome guest in many households across the world.</accordion-content>
+                          <accordion-title>Level3 <i class="plus square outline icon"></i></accordion-title>
+                          <accordion-content>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Leve3A </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level3B </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                              <sm-accordion-item>
+                                  <accordion-title icon="sidebar big">Level3C </accordion-title>
+                                  <accordion-content>
+                                      vdfgdf
+                                  </accordion-content>
+                              </sm-accordion-item>
+                          </accordion-content>
                       </sm-accordion-item>
-                  </sm-accordion> -->
+                  </sm-accordion>
               </sm-sidebar>
           </sm-menu>
       </sm-menu>

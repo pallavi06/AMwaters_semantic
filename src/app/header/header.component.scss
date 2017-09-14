@@ -192,13 +192,59 @@ sm-dropdown .dropdown{
 }
 
 .ui.inverted.teal.menu {
-  // background-color: $white;
+   background-color: $white;
 }
 .ui.vertical.menu .dropdown.item .menu {
   left: 0;
   top: 38px !important;
+  width: 100%;
+  position: relative;
 }
-sm-dropdown .dropdown {
-  height: auto;
-  color: #fff !important;
+.sidebar.ui.teal.menu{
+  sm-dropdown .dropdown {
+    height: auto;
+    color: $text-color !important;
+  }
+  .ui.labeled.icon.button>.icon{
+    left: 90%;
+    background-color: transparent !important;
+  }
+  .dropdown.item>.icon.dropdown{
+    display: none;
+  }
+  .active.item{
+    color: $theme-color1 !important;
+    background-color: transparent !important;
+  }
 }
+//SIDEBAR accordian
+.ui.accordion.styled{
+
+  .title{
+    color: $text-color;
+    position: relative;
+    .dropdown.icon{
+      display: none;
+    }
+    &:hover, &.active{
+        color: $theme-color1;
+    }
+    .plus.icon{
+      position: absolute;
+      right: 0;
+
+    }
+  }
+  .content.active{
+    background: $gray;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  accordion-content .title, accordion-content .title:hover {
+    color: $theme-color2 !important;
+    .dropdown.icon{
+      display: inline-block;
+    }
+  }
+}
+
