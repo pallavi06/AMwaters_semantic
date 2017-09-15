@@ -16,6 +16,8 @@ import { SortableComponent } from './sortable/sortable.component';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { SafePipe } from './video/video.pipe';
 import { SortableModule } from '@progress/kendo-angular-sortable';
+import { ParallaxComponent } from './parallax/parallax.component';
+import { ChatComponent } from './chat/chat.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,8 @@ import { SortableModule } from '@progress/kendo-angular-sortable';
     CarouselComponent,
     SortableComponent,
     SafePipe,
+    ParallaxComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,
