@@ -1,55 +1,89 @@
 @import '../../styles/variables.scss';
 
 .chat_box{
-  border: 1px solid #888;
+  border: 1px solid $text-color;
   padding: 8px 8px;
   border-radius: 15px;
+  position: absolute;
+  width: 300px;
 }
 .chat_header{
     padding: 8px 12px;
-    background-color: #d83976;
-    color: white;
+    background-color: $theme-color2 ;
+    color: $white;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     font-size: 15px;
-    font-family: 'Lato-Regular';
 }
 
 .chat_body{
     padding: 10px 10px;
     border: 1px solid #d2d2d2;
     border-top: none;
-    background-color: #efefef;
+    display: -webkit-flex;
+    display: flex;
     margin-bottom: 10px;
+    .chat_left{
+      -webkit-flex: 1;  /* Safari 6.1+ */
+      -ms-flex: 1;  /* IE 10 */
+      flex: 1;
+      color: $theme-color2 ;
+    }
+    .box_content{
+        padding: 10px 8px;
+        border: 1px solid #bfbaba;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 2px 2px 10px;
+        .time{
+            color: lighten($text-color, 15%);
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+    }
+    .btn_group{
+      margin-top: 10px;
+      text-align: center;
+    }
+    .btn1 .ui.primary.button{
+      padding: 8px;
+      border-radius: 30px;
+      background-color: #33a23f;
+      border: 1px solid #33a23f;
+      box-shadow: unset;
+      color: $white;
+  }
+  .btn2 .ui.primary.button{
+      border-radius: 30px;
+      border: 1px solid $theme-color2;
+      background-color: $white;
+      box-shadow: unset;
+      color:$theme-color2;
+      padding: 8px;
+  }
+}
+.chat_footer{
+  position: relative;
+  .ui.input{
+      width:100%;
+      input{
+        padding: 15px 10px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+  }
+  .ui.primary.button{
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      background: transparent;
+      color: $theme-color2;
+      border: 1px solid lighten($text-color, 15%);
+      border-radius: 50%;
+      padding: 10px 9px;
+  }
 }
 
-.box_content{
-    padding: 10px 8px;
-    border: 1px solid #bfbaba;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    box-shadow: 2px 2px 10px;
-}
-
-.btn1{
-    padding: 2px 12px;
-    border-radius: 30px;
-    background-color: #33a23f;
-    box-shadow: unset;
-    color: white;
-    font-family: Lato-Regular;
-    font-size: 14px;
-}
-.btn2{
-    padding: 2px 12px;
-    border-radius: 30px;
-    border: 2px solid $theme-color2;
-    background-color: white;
-    box-shadow: unset;
-    color:$theme-color2;
-    font-family: Lato-Regular;
-    font-size: 14px;
-}
 
 
