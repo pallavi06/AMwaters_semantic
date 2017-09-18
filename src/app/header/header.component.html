@@ -40,6 +40,9 @@
 
               <a sm-item href="#/elements/menu"
               image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a>
+              <sm-dropdown class="pointing link" image="http://semantic-ui.com/images/avatar/small/stevie.jpg" [options]="{on: 'focus'}">
+                <sm-item *ngFor="let item of admin">{{item}}</sm-item>
+              </sm-dropdown>
 
 
               <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge mysidebar" #menuSidebar>
