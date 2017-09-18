@@ -1,25 +1,30 @@
-<div class="chat_box">
-  <div class="chat_header">
-    <span>Ask Puddle</span><i class="maximize icon"></i><i class="minus icon" style="float:right;"></i>
-  </div>
-  <div class="chat_body">
-    <div class="chat_left">
-      <i class="wechat icon" ></i>
+<button class="ui button " (click)="myPopup.show($event, {position: 'top right'})">Click me</button>
+<sm-popup #myPopup>
+    <div class="chat_box">
+        <div class="chat_header">
+          <span>Ask Puddle</span><i class="maximize icon"></i><i class="minus icon" style="float:right;"></i>
+        </div>
+        <div class="chat_body">
+          <div class="chat_left">
+            <i class="wechat icon" ></i>
+          </div>
+          <div class="box_content">
+            <div class="time">Just now</div>
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipi.</div>
+            <div class="btn_group">
+                <sm-button class="primary btn1" icon="">Yes, Please</sm-button>
+                <sm-button class="primary btn2" icon="">No, Thank You </sm-button>
+            </div>
+          </div>
+        </div>
+        <div class="chat_footer">
+          <!-- <sm-search  placeholder="Search..." (onSearch)="elementIcon.innerText = $event" [icon]="true"
+              class="fluid" [debounce]="500">
+          </sm-search> -->
+          <sm-input icon="" [control]="" class="left" placeholder="Type your response..."></sm-input>
+          <sm-button class="primary" icon="unmute"></sm-button>
+        </div>
     </div>
-    <div class="box_content">
-      <div class="time">Just now</div>
-      <div class="text">Lorem ipsum dolor sit amet, consectetur adipi.</div>
-      <div class="btn_group">
-          <sm-button class="primary btn1" icon="">Yes, Please</sm-button>
-          <sm-button class="primary btn2" icon="">No, Thank You </sm-button>
-      </div>
-    </div>
-  </div>
-  <div class="chat_footer">
-    <!-- <sm-search  placeholder="Search..." (onSearch)="elementIcon.innerText = $event" [icon]="true"
-        class="fluid" [debounce]="500">
-    </sm-search> -->
-    <sm-input icon="" [control]="" class="left" placeholder="Type your response..."></sm-input>
-    <sm-button class="primary" icon="unmute"></sm-button>
-  </div>
-  </div>
+
+</sm-popup>
+
