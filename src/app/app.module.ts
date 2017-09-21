@@ -18,6 +18,9 @@ import { SafePipe } from './video/video.pipe';
 import { SortableModule } from '@progress/kendo-angular-sortable';
 import { ParallaxComponent } from './parallax/parallax.component';
 import { ChatComponent } from './chat/chat.component';
+import {CalendarModule} from 'ap-angular2-fullcalendar';
+import { AppcalendarComponent } from './appcalendar/appcalendar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +36,15 @@ import { ChatComponent } from './chat/chat.component';
     SafePipe,
     ParallaxComponent,
     ChatComponent,
+    AppcalendarComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgSemanticModule,
     CarouselModule,
-    SortableModule
+    SortableModule,
+    CalendarModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
