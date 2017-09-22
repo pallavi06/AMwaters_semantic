@@ -1,4 +1,7 @@
 <!-- <div [ngClass]="{'header_nav':true, 'header_nav--big':!isShrunk, 'header_nav--small':isShrunk}">nav here</div> -->
+<div class="container">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div>
 <div class="banner-bg">
   <div class="main ui" [ngClass]="{'header_nav':true, 'header_nav--big':!isShrunk, 'header_nav--small':isShrunk}">
       <sm-menu >
@@ -6,44 +9,34 @@
           <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
           <a class="inverted teal" sm-item href="#/elements/menu"   *ngIf="!isShrunk" image="../../assets/images/logo.png"></a>
           <a class="inverted teal" sm-item href="#/elements/menu"   *ngIf="isShrunk" image="../../assets/images/logo2.png"></a>
-          <!-- <input type="checkbox" id="nav" /><label for="sm-menu"></label> -->
-          <!-- <a sm-item href="#/elements/menu" *ngFor="let item of items" [icon]="item?.icon">{{item?.title}}</a> -->
-          <a sm-item href="#/elements/menu"  icon="home">Home</a>
-          <sm-dropdown class="pointing link" title="Discover" [options]="{on: 'hover'}">
-              <sm-item *ngFor="let item of discover ">{{item}}</sm-item>
-          </sm-dropdown>
-          <sm-dropdown class="pointing link" title="Connect" [options]="{on: 'hover'}">
-            <sm-item *ngFor="let item of connect">{{item}}</sm-item>
-          </sm-dropdown>
-          <sm-dropdown class="pointing link" title="Share" [options]="{on: 'hover'}">
-              <sm-item *ngFor="let item of share">{{item}}</sm-item>
-          </sm-dropdown>
-          <sm-dropdown class="pointing link" title="Work" [options]="{on: 'hover'}">
-            <sm-item *ngFor="let item of work">{{item}}</sm-item>
-          </sm-dropdown>
-          <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'focus'}">
+
+          <!-- <sm-dropdown class="pointing link" title="Admin" [options]="{on: 'focus'}">
             <sm-item *ngFor="let item of admin">{{item}}</sm-item>
-          </sm-dropdown>
+          </sm-dropdown> -->
 
-
+          <a class="item">
+              <sm-search placeholder="What would you like to do today?" (onSearch)="elementIcon.innerText = $event" [icon]="true" class="fluid" [debounce]="500"></sm-search>
+          </a>
           <sm-menu class="menu right secondary icon">
-              <a class="item">
+              <!-- <a class="item">
                   <form class="search-container" action="//llamaswill.tumblr.com/search">
                     <input id="search-box" type="text" class="search-box" name="q" />
                     <label for="search-box"><i class="search-icon search icon"></i></label>
                     <input type="submit" id="search-submit" />
                   </form>
-              </a>
+              </a> -->
               <a class="item">
-                  <i class="bell icon"></i>
+                  <i class="life ring icon"></i>
               </a>
 
-              <a sm-item href="#/elements/menu"
-              image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a>
-              <sm-dropdown class="pointing link" image="http://semantic-ui.com/images/avatar/small/stevie.jpg" [options]="{on: 'focus'}">
-                <sm-item *ngFor="let item of admin">{{item}}</sm-item>
+              <!-- <a sm-item href="#/elements/menu"
+              image="http://semantic-ui.com/images/avatar/small/stevie.jpg"></a> -->
+              <sm-dropdown class="pointing link" icon="bell"  [options]="{on: 'focus'}">
+                <sm-item  *ngFor="let item of admin">{{item}}</sm-item>
               </sm-dropdown>
-
+              <a class="item">
+                  <i class="remove bookmark icon"></i>
+              </a>
 
               <sm-sidebar class="left vertical inverted sidebar labeled menu teal huge mysidebar" #menuSidebar>
 
