@@ -1,233 +1,128 @@
 <div class="gray-bg">
+  <!-- whats new today -->
   <div class="ui container">
     <div class="row">
-      <div class="col-sm-4">
-        <app-box [text]="'AMERICAN WATER WORKS COMPANY INC'"></app-box>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
       </div>
-      <div class="col-sm-4">
-        <app-carousel [text]="'say HAPPY BIRTHDAY'"></app-carousel>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
       </div>
-      <div class="col-sm-4">
-        <app-video [text]="'LIVE CAM'"></app-video>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+      </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+      </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
       </div>
     </div>
   </div>
 </div>
 
 <div class="ui container">
-    <div class="row">
-      <div class="col-sm-9 left_content">
-        <!-- News and Update -->
-        <div class="common-heading">News & Updates</div>
-        <div class="img-slider">
-            <img src="../../assets/images/img2.png" alt="">
-            <div class="overlay">
-                <div class="img-text">
-                  <div class="row">
-
-                      <div class="col-sm-6">
-                          <div class="tag">Corporate News</div>
-                          <header>
-                              Water for People is chnaging in Rwanda
-                            <div class="date">09/05/2017</div>
-                          </header>
-
-                          <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo sed do eiusmod tempo</section>
-                          <footer>
-                            <span>Read More <i class="arrow right icon"></i></span>
-                          </footer>
-                      </div>
-                  </div>
-               </div>
-            </div>
-        </div>
-        <div class="">
-
-            <app-sortable></app-sortable>
-          <!--<div class="col-sm-4">
-            <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
-          </div>
-          <div class="col-sm-4">
-            <app-card [heading]="'Policy Update Story title goes here'" [img_src]="'../../assets/images/img4.png'"></app-card>
-          </div>
-          <div class="col-sm-4">
-            <app-card [heading]="'News based on interest goes here'" [img_src]="'../../assets/images/img5.png'"></app-card>
-          </div>
-           <div class="col-sm-4">
-            <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
-          </div>
-          <div class="col-sm-4">
-            <app-card [heading]="'Policy Update Story title goes here'" [img_src]="'../../assets/images/img4.png'"></app-card>
-          </div>
-          <div class="col-sm-4">
-            <app-card [heading]="'News based on interest goes here'" [img_src]="'../../assets/images/img5.png'"></app-card>
-          </div>-->
-        </div>
-        <!--leadership connect -->
-        <header class="common-heading">Leadership Connect</header>
+  <div class="row">
+    <!-- Recent Searches -->
+    <div class="col-sm-3">
+            <div class="common-heading">|Recent Searches</div>
+      <section>
         <div class="row">
-          <div class="col-sm-4">
-          <app-card [heading]="'Susan Storys Blog title here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+          <div class="col-sm-3">
+            <img src="../../assets/images/yammer1.png"/>
           </div>
-          <div class="col-sm-4">
-          <app-card [heading]="'Update from HR team can be here'" [img_src]="'../../assets/images/img4.png'"></app-card>
+          <div class="col-sm-9">
+            <p>Jessica has replied to your comment on <a>xyz post:</a><span>'lorem ipsum dolar...'</span></p>
           </div>
-          <div class="col-sm-4">
-          <app-card [heading]="'News based on interest goes here'" [img_src]="'../../assets/images/img5.png'"></app-card>
-          </div>
-      </div>
-      </div>
-      <div class="col-sm-3 right_content">
-        <header class="common-heading">Yammer</header>
-        <app-yammer></app-yammer>
-        <app-appcalendar></app-appcalendar>
-        <hr>
-      </div>
-    </div>
-</div>
-<!-- latest video -->
-<hr>
-<div class="ui container">
-    <div class="common-heading">latest video <span>Main Channel</span></div>
-    <div class="row">
-      <div class="col-sm-6">
-        <!-- <img src="../../assets/images/video2.png"> -->
-        <app-video [img_src]="'../../assets/images/video2.png'"></app-video>
-      </div>
-      <div class="col-sm-6">
+        </div>
+      </section>
+      <section>
         <div class="row">
-          <div class="col-sm-6">
-            <app-video [img_src]="'../../assets/images/video3.png'"></app-video>
+          <div class="col-sm-3">
+            <img src="../../assets/images/yammer1.png"/>
           </div>
-          <div class="col-sm-6">
-            <app-video [img_src]="'../../assets/images/video3.png'"></app-video>
+          <div class="col-sm-9">
+            <p>Jessica has replied to your comment on <a>xyz post:</a><span>'lorem ipsum dolar...'</span></p>
           </div>
-          <div class="col-sm-6">
-              <app-video [img_src]="'../../assets/images/video4.png'"></app-video>
-            </div>
-            <div class="col-sm-6">
-              <app-video [img_src]="'../../assets/images/video4.png'"></app-video>
-            </div>
         </div>
-      </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="../../assets/images/yammer1.png"/>
+          </div>
+          <div class="col-sm-9">
+            <p>Jessica has replied to your comment on <a>xyz post:</a><span>'lorem ipsum dolar...'</span></p>
+          </div>
+        </div>
+      </section>
     </div>
-</div>
-<hr>
-<!-- parallax effect -->
-<div class="ui container">
-  <app-parallax></app-parallax>
-</div>
-<hr>
-<!-- annual performance -->
-<div class="ui container">
-    <div class="common-heading">annual performance</div>
-      <div class="row">
-        <div class="col-sm-9">
-          <table class="table">
-            <thead>
-              <tr>
-                <th colspan="2">Strategy</th>
-                <th>Goal</th>
-                <th>Target</th>
-                <th colspan="2">Weight</th>
-                </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="orange-bg"><i class="child icon"></i></td>
-                <td class="orange-lt-bg">Safety & People</td>
-                <td>Recordable Incident Rate</td>
-                <td>2.20</td>
-                <td>7.5%</td>
-                <td class="icon-circle green"><i class="circle icon"></i></td>
-              </tr>
-              <tr>
-                <td class="blue-bg"><i class="users icon"></i></td>
-                <td class="blue-lt-bg">Customer</td>
-                <td>Recordable Incident Rate</td>
-                <td>2.20</td>
-                <td>10%</td>
-                <td class="icon-circle green"><i class="circle icon"></i></td>
-              </tr>
-              <tr>
-                <td class="green-bg"><i class="pagelines icon"></i></td>
-                <td class="green-lt-bg">Environmental Leadership</td>
-                <td>Recordable Incident Rate</td>
-                <td>2.20</td>
-                <td>10%</td>
-                <td class="icon-circle green"><i class="circle icon"></i></td>
-              </tr>
-              <tr>
-                <td class="yellow-bg"><i class="rss icon"></i></td>
-                <td class="yellow-lt-bg">Technology & Operational Efficiency</td>
-                <td>Recordable Incident Rate</td>
-                <td>2.20</td>
-                <td>10%</td>
-                <td class="icon-circle green"><i class="circle icon"></i></td>
-              </tr>
-              <tr>
-                <td class="blue1-bg"><i class="signal icon"></i></td>
-                <td class="blue1-lt-bg">Growth</td>
-                <td>Recordable Incident Rate</td>
-                <td>2.20</td>
-                <td>7.5%</td>
-                <td class="icon-circle green"><i class="circle icon"></i></td>
-              </tr>
-              <tr></tr>
-
-            </tbody>
-
-          </table>
-        </div>
-        <div class="col-sm-3">
-          <img src="../../assets/images/graph2.png">
-        </div>
-      </div>
-      <div class="row annual_data">
-        <div class="col-sm-3">
-            <div class="icon-circle blue"><i class="circle icon"></i></div>
-            <header>Customers</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-        </div>
-        <div class="col-sm-3">
-          <div class="icon-circle blue1"><i class="circle icon"></i></div>
-          <header>People</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-        </div>
-        <div class="col-sm-3">
-          <div class="icon-circle yellow"><i class="circle icon"></i></div>
-          <header>Technology & Operational Efficiency</header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-        </div>
-        <div class="col-sm-3">
-          <div class="icon-circle green"><i class="circle icon"></i></div>
-          <header>Growth</header>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-        </div>
-        <div class="col-sm-3">
-          <div class="icon-circle orange"><i class="circle icon"></i></div>
-          <header>Safety</header>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-        </div>
-
-      </div>
-</div>
-
-<!-- find offices -->
-<div class="gray-bg1">
-  <div class="ui container">
-     <div class="row">
-       <div class="col-sm-6">
-          <div class="common-heading">find offices</div>
-       </div>
-       <div class="col-sm-6">
-          <sm-search placeholder="What would you like to do today?" (onSearch)="elementIcon.innerText = $event" [icon]="true" class="fluid" [debounce]="500"></sm-search>
-       </div>
-     </div>
-
-  </div>
-  <div>
-    <img src="../../assets/images/map.png">
+    <!-- Inspired by your interest -->
+    <div class="col-sm-9">
+      <div class="common-heading">|Inspired by your interest</div>
+          <div class="row">
+            <div class="col-sm">
+              <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+            </div>
+            <div class="col-sm">
+              <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+            </div>
+            <div class="col-sm">
+              <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+            </div>
+            <div class="col-sm">
+              <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+            </div>
+            <div class="col-sm">
+              <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+            </div>
+          </div>
+    </div>
   </div>
 </div>
-<app-chat></app-chat>
+
+<div class="ui container">
+  <div class="row">
+    <div class="col-sm">
+      <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+      </div>
+    <div class="col-sm">
+      <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+      </div>
+    <div class="col-sm">
+      <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+      </div>
+    <div class="col-sm">
+      <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+      </div>
+  </div>
+</div>
+
+<!-- Recommended by your circle -->
+<div class="ui container">
+  <div class="common-heading">Recommended by your circle </div>
+  <div class="row">
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+      <div class="col-sm">
+        <app-card [heading]="'State Specific News Titile goes here'" [img_src]="'../../assets/images/img3.png'"></app-card>
+        </div>
+  </div>
+</div>
+
