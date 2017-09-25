@@ -1,4 +1,10 @@
 @import '../../styles/variables.scss';
+.imp_txt{
+  font-size: 13px;
+  font-weight: bold;
+  margin: 12px 0;
+  text-align: center;
+}
 .banner-bg{
   background: url(../../assets/images/banner.jpg);
   //padding:0 15px;
@@ -72,7 +78,7 @@ sm-dropdown .dropdown{
  transition:0.25s linear all;
  z-index: 99999;
  &.header_nav--big{
-   top: 20px;
+   top: 45px;
  }
  &.header_nav--small{
   top: 0;
@@ -176,7 +182,7 @@ sm-dropdown .dropdown{
 .banner-bottom{
   background: rgba(0,0,0,0.18);
   position: absolute;
-  top: 75px;
+  top: 100px;
   width: 100%;
   color: $white;
   padding: 15px 0;
