@@ -20,7 +20,8 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "../node_modules/@covalent/core/common/platform.scss"
+        "../node_modules/@covalent/core/common/platform.scss",
+        "../node_modules/flexboxgrid/css/flexboxgrid.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
