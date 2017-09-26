@@ -4,6 +4,10 @@
   font-weight: bold;
   margin: 12px 0;
   text-align: center;
+  span{
+    color: red;
+    text-transform: uppercase;
+  }
 }
 .banner-bg{
   background: url(../../assets/images/banner.jpg);
@@ -48,7 +52,9 @@
     }
     sm-search{
       width: 858px;
-
+    }
+    &>i.dropdown.icon {
+        display: none;
     }
   }
 }
@@ -182,7 +188,7 @@ sm-dropdown .dropdown{
 .banner-bottom{
   background: rgba(0,0,0,0.18);
   position: absolute;
-  top: 100px;
+  top: 75px;
   width: 100%;
   color: $white;
   padding: 15px 0;

@@ -1,12 +1,16 @@
 <!-- <div [ngClass]="{'header_nav':true, 'header_nav--big':!isShrunk, 'header_nav--small':isShrunk}">nav here</div> -->
 <div class="container ">
-  <div class="imp_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <div class="imp_txt"><span>Urgent information!</span> Lipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
 </div>
 <div class="banner-bg">
   <div class="main ui" [ngClass]="{'header_nav':true, 'header_nav--big':!isShrunk, 'header_nav--small':isShrunk}">
       <sm-menu >
 
           <a sm-item icon="sidebar big" (click)="menuSidebar.show({transition: 'overlay'})"></a>
+          <sm-dropdown class="pointing link" icon="grid layout"  [options]="{on: 'focus'}">
+            <sm-item  *ngFor="let item of admin">{{item}}</sm-item>
+          </sm-dropdown>
+
           <a class="inverted teal" sm-item href="#/elements/menu"   *ngIf="!isShrunk" image="../../assets/images/logo.png"></a>
           <a class="inverted teal" sm-item href="#/elements/menu"   *ngIf="isShrunk" image="../../assets/images/logo2.png"></a>
 
