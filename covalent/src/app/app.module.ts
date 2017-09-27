@@ -9,14 +9,18 @@ import { CovalentHttpModule } from '@covalent/http';
 import { CovalentHighlightModule } from '@covalent/highlight';
 import { CovalentDynamicFormsModule } from '@covalent/dynamic-forms';
 import { CovalentLoadingModule } from '@covalent/core';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CovalentExpansionPanelModule } from '@covalent/core';
+import { CovalentExpansionPanelModule, TdMediaService } from '@covalent/core';
 import {MatInputModule} from '@angular/material';
+import { HeaderComponent } from './header/header.component';
+import {MdCardModule} from '@angular/material';
+import {MdListModule} from '@angular/material';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -29,9 +33,11 @@ import {MatInputModule} from '@angular/material';
     FormsModule,
     CovalentHttpModule.forRoot(),
     CovalentHighlightModule,
-    CovalentDynamicFormsModule
+    CovalentDynamicFormsModule,
+    MdCardModule,
+    MdListModule
   ],
-  providers: [],
+  providers: [TdMediaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
