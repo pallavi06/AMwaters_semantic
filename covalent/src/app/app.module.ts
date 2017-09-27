@@ -16,11 +16,13 @@ import {MatInputModule} from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import {MdCardModule} from '@angular/material';
 import {MdListModule} from '@angular/material';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
